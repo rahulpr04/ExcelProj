@@ -36,4 +36,6 @@ cols=list(df.columns.values)
 df = df[cols[0:4]+[cols[12]]+cols[4:12]]
 print(df.head(5))
 
+df.to_csv('./Data/Modified.csv',index=False)
+df.to_excel('./Data/modifiedxls.xlsx',index=False)
 
